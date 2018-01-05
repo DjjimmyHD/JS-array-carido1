@@ -1,0 +1,14 @@
+body {
+    min-height: 100vh;
+}
+ul {
+    list-style-type: none;
+}
+.inventors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    color: red;
+
+}
