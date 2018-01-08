@@ -81,6 +81,26 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
+ const q1 = document.querySelector('#q1');
+ 
+ const testingArr = inventors.filter(function (inventor) {
+    if (inventor.year >= 1500 && inventor.year < 1600) {
+        return true;
+        
+    }
+    else
+    {   
+        return false;
+        
+    }
+
+});
+console.log(q1);
+console.log(JSON.stringify(testingArr[0]));
+
+
+q1.innerText = JSON.stringify(testingArr[0]) + " " + JSON.stringify(testingArr[1]);
+
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
